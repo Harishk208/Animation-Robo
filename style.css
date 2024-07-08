@@ -1,0 +1,230 @@
+body {
+  background-color: aqua;
+}
+#face {
+  background-color: rgb(255, 0, 0);
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  margin-top: 100px;
+  border-top-left-radius: 490px;
+  border-top-right-radius: 490px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#re,
+#le {
+  background-color: rgb(5, 250, 238);
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  margin-top: 97px;
+  border-radius: 60%;
+}
+
+#body {
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
+  margin: auto;
+}
+#cb {
+  background-color: rgb(248, 244, 6);
+  height: 250px;
+  width: 200px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#rh {
+  background-color: rgb(17, 255, 0);
+  height: 100px;
+  width: 30px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+#lh {
+  background-color: rgb(17, 255, 0);
+  height: 100px;
+  width: 30px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(4, 4, 4);
+  text-shadow: 10px black;
+}
+#leg {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: -30px;
+}
+#rl {
+  background-color: rgb(248, 244, 6);
+  height: 85px;
+  width: 30px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+#ll {
+  background-color: rgb(248, 244, 6);
+  height: 85px;
+  width: 30px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+#full {
+  height: 670px;
+  width: 500px;
+  border: 25px solid white;
+  margin: auto;
+}
+#full:hover #face {
+  animation: changeface 5s infinite;
+}
+@keyframes changeface {
+  0% {
+    transform: rotate(360deg);
+    background-color: chartreuse;
+    border-radius: 50%;
+  }
+  25% {
+    transform: rotate(-360deg);
+    background-color: rebeccapurple;
+  }
+  50% {
+    transform: rotate(360deg);
+    background-color: rgb(47, 255, 5);
+    border-radius: 50%;
+  }
+  75% {
+    transform: rotate(-360deg);
+    background-color: rgb(255, 0, 93);
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: rgb(3, 3, 3);
+    border-radius: 50%;
+  }
+}
+#full:hover #cb {
+  animation: changecb 2s infinite;
+}
+@keyframes changecb {
+  0% {
+    transform: rotate(360deg);
+    background-color: yellow;
+  }
+  25% {
+    transform: rotate(360deg);
+    background-color: rgb(8, 0, 255);
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: rgb(255, 0, 0);
+  }
+}
+#full:hover #lh {
+  animation: changelh 5s infinite;
+}
+@keyframes changelh {
+  0% {
+    transform: rotate(360deg);
+    transform-origin: top center;
+  }
+  25% {
+    transform: rotate(90deg);
+    transform-origin: left center;
+  }
+  50% {
+    transform: rotate(180deg);
+    transform-origin: right center;
+  }
+  75% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: top center;
+  }
+}
+#full:hover #rh {
+  animation: changelh 5s infinite;
+}
+@keyframes changerh {
+  0% {
+    transform: rotate(360deg);
+    transform-origin: top center;
+  }
+  25% {
+    transform: rotate(90deg);
+    transform-origin: left center;
+  }
+  50% {
+    transform: rotate(180deg);
+    transform-origin: right center;
+  }
+  75% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: top center;
+  }
+}
+
+#full:hover #rl {
+  animation: changerl 5s infinite;
+}
+@keyframes changerl {
+  0% {
+    transform: rotate(60deg);
+    transform-origin: left center;
+  }
+  25% {
+    transform: rotate(90deg);
+    transform-origin: top center;
+  }
+  50% {
+    transform: rotate(180deg);
+    transform-origin: left center;
+  }
+  75% {
+    transform: rotate(360deg);
+    transform-origin: right center;
+  }
+  100% {
+    transform: rotate(30deg);
+    transform-origin: top center;
+  }
+}
+
+#full:hover #ll {
+  animation: changell 5s infinite;
+}
+@keyframes changell {
+  0% {
+    transform: rotate(60deg);
+    transform-origin: left center;
+  }
+  25% {
+    transform: rotate(90deg);
+    transform-origin: top center;
+  }
+  50% {
+    transform: rotate(180deg);
+    transform-origin: left center;
+  }
+  75% {
+    transform: rotate(360deg);
+    transform-origin: right center;
+  }
+  100% {
+    transform: rotate(30deg);
+    transform-origin: top center;
+  }
+}
